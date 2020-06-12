@@ -1,5 +1,4 @@
--r requirements.txt
-
+httpie
 ipdb
 pytest==5.4.2
 python-dotenv==0.13.0
