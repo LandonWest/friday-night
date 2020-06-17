@@ -16,6 +16,8 @@ fileConfig(config.config_file_name)
 # add your model's MetaData object here
 # for 'autogenerate' support
 from friday_night.models.user import Base
+from friday_night.models.media_entry import Base
+# from friday_night.models.media_item import Base
 target_metadata = Base.metadata
 
 # other values from the config, defined by the needs of env.py,

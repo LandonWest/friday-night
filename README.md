@@ -8,14 +8,15 @@
 
 1. `venv/bin/pip install -e . -r requirements.txt -r requirements-dev.txt`
 
-<!-- 1. `pip install -r requirements-dev.txt` -->
 
 ## Database
 Create the db from scratch from current migrations or run a new migration
 
 1. `venv/bin/alembic upgrade head`
 
-Auto-generate an alembic migration from a model
+Auto-generate an alembic migration from a model. Example:
+
+1. Add your models MetaData object to `alembic/env.py` ex. `from friday_night.models.user import Base`
 
 1. `venv/bin/alembic revision --autogenerate -m "Added accounts table"`
 
